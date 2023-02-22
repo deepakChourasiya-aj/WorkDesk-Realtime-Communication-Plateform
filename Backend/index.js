@@ -23,7 +23,7 @@ app.get('/', (req,res)=>res.send('home_Route'))
 // routers
 app.use('/user',userRouter)
 app.use(authenticate)       //  will validate login status
-app.use(GntRouter)
+app.use('/newtoken',GntRouter)
 app.use('/logout',LogoutRouter)
 
 
