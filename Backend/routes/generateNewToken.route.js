@@ -5,12 +5,12 @@ require("dotenv").config();
 const GntRouter = express.Router();
 
 GntRouter.get("/GenNewToken", (req, res) => {
-  const refreshtoken = req.cookies.RefreshToken || "";
+  const refreshtoken = req.cookies.Refresh_Token || "";
   console.log(refreshtoken);
 
   if (!refreshtoken) res.status(401).send({ Message: "Please Login Again" });
 
-  jwt.verify(refreshtoken, process.env.REFRESH_KEY, (err, decoded) => {
+  jwt.verify(refreshtoken, process.env.Refresh_Token_key, (err, decoded) => {
     if (err) {
       res.status(401).send({ Message: "Contact to Administrator" });
     } else {
@@ -19,7 +19,7 @@ GntRouter.get("/GenNewToken", (req, res) => {
           UserId: decoded._id,
           UserRole: decoded.Role,
         },
-        process.env.NORMAL_KEY,
+        process.env.Normal_Token_key,
         {
           expiresIn: "7d",
         }
