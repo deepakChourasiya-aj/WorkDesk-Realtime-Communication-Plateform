@@ -1,6 +1,5 @@
 const express = require("express");
 const redis = require("redis");
-const app = express();
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const { userRouter } = require("./routes/user.route");
@@ -8,8 +7,10 @@ const { authenticate } = require("./middlewares/authenticate.middleware");
 const { LogoutRouter } = require("./routes/logout.route");
 const { dbconnetion } = require("./configs/db");
 const { GntRouter } = require("./routes/generateNewToken.route");
+const http = require("http");
 
-
+const app = express();
+const server =  http.createServer(app) 
 
 // middleware
 
