@@ -4,9 +4,9 @@ require("dotenv").config();
 
 const GntRouter = express.Router();
 
-GntRouter.get("/GenNewToken", (req, res) => {
+GntRouter.get("/", (req, res) => {
   const refreshtoken = req.cookies.Refresh_Token || "";
-  console.log(refreshtoken);
+  // console.log(refreshtoken);
 
   if (!refreshtoken) res.status(401).send({ Message: "Please Login Again" });
 
@@ -25,7 +25,7 @@ GntRouter.get("/GenNewToken", (req, res) => {
         }
       );
 
-      res.cookie("NormalToken", Normal_Token, { httpOnly: true });
+      res.cookie("Normal_Token", Normal_Token, { httpOnly: true });
 
       res.status(200).send({
         Message: "Login Successfully",
