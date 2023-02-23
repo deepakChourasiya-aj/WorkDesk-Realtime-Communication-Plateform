@@ -8,6 +8,7 @@ const { LogoutRouter } = require("./routes/logout.route");
 const { dbconnetion } = require("./configs/db");
 const { GntRouter } = require("./routes/generateNewToken.route");
 const http = require("http");
+const { githublogin } = require("./routes/githubLogin.route");
 
 const app = express();
 const server =  http.createServer(app) 
@@ -20,12 +21,18 @@ app.use(cors());
 
 
 app.get('/', (req,res)=>res.send('home_Route'))
+// github login
+app.use("/githublogin", githublogin);
+
 
 // routers
 app.use('/user',userRouter)
 app.use(authenticate)       //  will validate login status
 app.use('/newtoken',GntRouter)
 app.use('/logout',LogoutRouter)
+
+
+
 
 
 // server listens 

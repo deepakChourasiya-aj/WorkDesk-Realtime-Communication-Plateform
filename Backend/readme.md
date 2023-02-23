@@ -18,3 +18,15 @@ create user -> post: localhost:8080/user/register
       we need to send access_key(presented in .env)
 
 
+
+----------------------------------------------------------------
+
+github Oauth 
+
+    1. Route login,dashboard 
+    2. impelement auth 
+    3. sessions
+    4. protected
+    5. logout 
+
+
