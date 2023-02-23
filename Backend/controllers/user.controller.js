@@ -57,7 +57,7 @@ exports.login = async (req, res) => {
             }
             else {
                 res.status(401).json({ "message": "error while login" });
-            } 
+            }
         })
 
 
@@ -67,3 +67,37 @@ exports.login = async (req, res) => {
 
 }
 
+exports.getalluser = async (req, res) => {
+    try {
+        if (req.body.accesskey === process.env.access_key ) {
+
+            const UserData = await UserModel.find();
+            res.status(200).json({ UserData })
+        }
+        else {
+            res.status(401).json({ message: "Access denied" });
+        }
+        
+    }
+    catch (error) {
+        res.status(400).json({ message: error.message });
+        
+    }
+}
+exports.getUser = async (req, res) => {
+        const _id = req.params.id;
+        try {
+            if (req.body.accesskey === process.env.access_key ) {
+                const UserData = await UserModel.findOne({_id});
+                res.status(200).json({ UserData })
+            }
+            else {
+                res.status(401).json({ message: "Access denied" });
+            }
+            
+        }
+        catch (error) {
+            res.status(400).json({ message: error.message });
+            
+        }
+    }
