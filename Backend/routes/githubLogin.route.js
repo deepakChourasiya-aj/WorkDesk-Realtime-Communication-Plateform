@@ -1,7 +1,9 @@
 const express = require('express');
 const passport = require('passport');
+const { UserModel } = require('../model/user.model');
 const githublogin = express.Router();
 const GitHubStrategy = require('passport-github2').Strategy;
+
 
 //! post login route  given from github developer settings
 
