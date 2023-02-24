@@ -22,7 +22,7 @@ app.use(cors());
 
 app.get('/', (req,res)=>res.send('home_Route'))
 // github login
-app.use("/githublogin", githublogin);
+app.use("/git", githublogin);
 
 
 // routers
