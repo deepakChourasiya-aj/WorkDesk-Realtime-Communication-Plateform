@@ -1,56 +1,108 @@
-.logo{
-    width: 5%;
-    margin:  0 20px;
-}
-.mcontainer{
-    width: 85%;
-    margin: auto;
-    border: 1px solid red;
-    
-}
-.sidebar-con{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: auto;
-    border: 1px solid red;
-    
+html,
+body {
+  position: relative;
+  height: 100%;
 }
 
-html,
-        body {
-          position: relative;
-          height: 100%;
-        }
-    
-        body {
-          background: #eee;
-          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-          font-size: 14px;
-          color: #000;
-          margin: 0;
-          padding: 0;
-        }
-    
-        .swiper {
-          width: 80%;
-          height: 100%;
-          margin: auto;
-        }
-    
-        .swiper-slide {
-          text-align: center;
-          font-size: 18px;
-          background: #fff;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border: 1px solid red;
-        }
-    
-        .swiper-slide img {
-          display: block;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.slide-1{
+  background-image: url("https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.logo {
+  width: 5%;
+  margin: 0 20px;
+}
+
+.mcontainer {
+  width: 100%;
+  margin-bottom: 100px;
+  border: 1px solid red;
+
+}
+
+.sidebar-con {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  border: 1px solid red;
+
+}
+
+
+.slideContent{
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.animateddiv{
+  width: 40%;
+}
+.textcontent{
+  width: 30%;
+  margin: auto;
+  text-align: left
+
+}
+.heading{
+  
+  font-size: 3.5rem;
+
+  text-align: left;
+}
+.description{
+  margin: 20px auto;;
+  font-size: 1.2rem;
+
+}
+a{
+  text-decoration: none;
+}
+.greycolor{
+  color: grey;
+  font-weight: lighter;
+}
+.social-icons{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 20px;
+}
+.social-icons>div{
+  width: 50%;
+  cursor: pointer;
+  padding: 20px;
+  border: 2px solid red;
+  border-radius: 10px;
+}
