@@ -198,9 +198,10 @@ const addStream = (video, stream) => {
         videoDiv.append(video)
         
 }
+//added later 
 
-// let hangup = document.getElementById("hangup");
-// hangup.onclick = () => {
-//     // console.log("Call cut");
-//     window.location.href("https://icons.veryicon.com/png/o/miscellaneous/cloud-call-center/hang-up.png")
-// }
+let hangup = document.getElementById("hangup");
+hangup.onclick = () => {
+    // console.log("Call cut");
+    window.location.href("https://icons.veryicon.com/png/o/miscellaneous/cloud-call-center/hang-up.png")
+}
