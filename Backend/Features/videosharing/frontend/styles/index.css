@@ -54,7 +54,7 @@ button{
     font-weight: 900;
     color: white;
     cursor: pointer;
-    transition: .7s;
+    transition: .5s;
     border: none;
     border-radius: 5px;
 }
