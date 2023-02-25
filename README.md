@@ -37,3 +37,23 @@ Reatime screen sharing web application..
 ### Stop share -->
 - Click on stop share option 
 
+
+## Examples
+ #### Creating connection and accessing user media .
+```javascript
+    peer = new Peer(room_id);
+    peer.on('open', (id) => {
+        console.log("Peer has joined ID no", id);
+        hideModal()
+        // media options...
+        getUserMedia({ video: true, audio: true },
+            (stream) => {
+                local_stream = stream;
+                setLocalStream(local_stream)
+            }, (err) => {
+                console.log(err);
+            })
+        notify("Waiting for the member to join.")
+    })
+```
+
