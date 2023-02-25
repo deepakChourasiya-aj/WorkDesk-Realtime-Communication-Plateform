@@ -24,6 +24,16 @@ Reatime screen sharing web application..
 ### Database - 
     - MongoDB
 
+## Application Guide
 
 
+
+### To use screen share feature -->
+-  First Create room 
+-  User can share the screen
+-  Than user can join the room using room ID
+-  Enter room ID to join 
+
+### Stop share -->
+- Click on stop share option 
 
