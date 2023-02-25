@@ -198,7 +198,7 @@ const addStream = (video, stream) => {
         videoDiv.append(video)
         
 }
-//added later
+//added later 
 
 let hangup = document.getElementById("hangup");
 hangup.onclick = () => {
