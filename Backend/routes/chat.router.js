@@ -17,21 +17,17 @@ chatUsers.use(express.static('public'));
 chatUsers.use(express.urlencoded({extended: true}));
 // chatUsers.use(cors());
 
-// chatUsers homepage
-chatUsers.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
-});
 
 // session post page
 const { v4: uuidv4 } = require('uuid');
-const exp = require('constants');
-chatUsers.post('/session', (req, res) => {
+app.post('/session', (req, res) => {
   let data = {
     username: req.body.username,
     userID: uuidv4()
   }
   res.send(data);
 });
+
 
 // socket.io middleware
 io.use((socket, next) => {
@@ -58,7 +54,7 @@ io.on('connection', async socket => {
     },
     fetchMessages: async (sender, receiver) => {
       let token = methods.getToken(sender, receiver);
-      const findToken = await ChatModel.findOne({userToken: token});
+      const findToken = await chatmodel.findOne({userToken: token});
       if(findToken) {
         io.to(sender).emit('stored-messages', {messages: findToken.messages});
       } else {
@@ -66,7 +62,7 @@ io.on('connection', async socket => {
           userToken: token,
           messages: []
         }
-        const saveToken = new ChatModel(data);
+        const saveToken = new chatmodel(data);
         const createToken = await saveToken.save();
         if(createToken) {
           console.log('Token created!');
@@ -82,7 +78,7 @@ io.on('connection', async socket => {
         message,
         time
       }
-      ChatModel.updateOne({userToken: token}, {
+      chatmodel.updateOne({userToken: token}, {
         $push: {messages: data}
       }, (err, res) => {
         if (err) throw err;
@@ -117,5 +113,6 @@ io.on('connection', async socket => {
   });
 
 });
+
 
 module.exports = {chatUsers}
