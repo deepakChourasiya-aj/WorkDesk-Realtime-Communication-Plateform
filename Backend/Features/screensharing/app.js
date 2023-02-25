@@ -1,5 +1,5 @@
-const PRE = "DELTA"
-const SUF = "MEET"
+const PRE = "WORK"
+const SUF = "DESK"
 
 var room_id;
 // THESE ALL ARE MEDIA CALL HERE________
