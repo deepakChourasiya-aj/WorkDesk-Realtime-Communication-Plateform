@@ -24,6 +24,10 @@ Reatime screen sharing web application..
 ### Database - 
     - MongoDB
 
+## Features 
+ -  Screen Sharing 
+ -  Chatting 
+ -  Vedio calling
 ## Application Guide
 
 
