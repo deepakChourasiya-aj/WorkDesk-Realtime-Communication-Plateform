@@ -21,10 +21,9 @@ app.use(cors());
 
 
 app.get('/', (req,res)=>res.send('home_Route'))
+
 // github login
 app.use("/git", githublogin);
-
-
 // routers
 app.use('/user',userRouter)
 app.use(authenticate)       //  will validate login status
