@@ -33,7 +33,7 @@ body {
     border-radius: 7px;
   }
   
-  .modelContainer {
+  /* .modelContainer {
     border: 2px solid red;
     width: 25%;
     margin: auto;
@@ -46,10 +46,10 @@ body {
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 8px;
-  }
+  } */
   .modelContainer > div {
     align-items: center;
-    height: 60vh;
+    height: 50vh;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
