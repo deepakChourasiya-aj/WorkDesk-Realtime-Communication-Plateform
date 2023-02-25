@@ -6,7 +6,6 @@ const jwt = require("jsonwebtoken");
 exports.signup = async (req, res) => {
     try {
         const { name, email, password } = req.body;
-        console.log(req.body);
         const isPresent = await UserModel.find({ email });
 
         if (isPresent.length === 0) {
