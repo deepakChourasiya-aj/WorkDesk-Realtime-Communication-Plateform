@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.btn img{
+    width: 70px;
+}
+
+.body{
+    border: 1px solid white;
+}
+
+.header{
+    background-color: white;
+}
+.header>img{
+    width: 40px;
+    margin-right: 70px;
+    background-color: b;
+}
+.chat-body{
+    border: 1px solid lightgrey;
+    display: flex;
+}
+.fa-circle{
+    margin-left: 20px;
+}
+.showname{
+    background-color: #054752;
+    width: 25%;
+    height: 520px;
+}
+td{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+td i{
+   font-size: 10px;
+}
+.showname span{
+    margin-left: 10px;
+}
+.main{
+    width: 80%;
+    margin: 2px;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    background-color: white;
+    border-bottom: 1px solid grey;
+    height: 40px;
+}
+
+.messages{
+    height: 415px;
+    overflow-y: auto;
+}
+.message.left {
+    margin-right: 40% !important;
+    border-top-left-radius: 0 !important;
+  }
+  .message.right {
+    margin-left: 40% !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  .msg-time {
+    display: block;
+    opacity: .7;
+    font-size: .7rem;
+  }
+
+.user-title{
+    border-bottom: 1px solid green;
+}
+.option{
+    display: flex;
+    align-items: center;
+}
+.option>div{
+    width: 100px;
+    margin-right: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+.option a{
+    color: teal;
+}
+
+
+@media screen and (min-width: 0px) and (max-width:600px){
+    .showname{
+        width: 40%;
+        height: 615px;
+    }
+    .main{
+        width: 60%;
+        margin: 2px;
+    }
+    .option>div{
+        width: 70px;
+        margin-right: 0px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .messages{
+        height: 510px;
+    }
+    .msgForm input{
+        width: 150px;
+    }
+    .msgForm  button{
+        padding: 0px;
+        height: 50px;
+        width: 60px;
+    }
+    .msgForm img{
+        width: 100%;
+        height: 100%;
+    }
+    .header>img{
+        margin-right: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
