@@ -1,4 +1,5 @@
-const socket = io('http://localhost:8080/');
+// const socket = io('http://localhost:8080/');
+const socket = io('https://melted-video-chat-server.onrender.com');
 const videoDiv = document.getElementById('videoDiv');
 const hideA = document.getElementById('hideA');
 const hideV = document.getElementById('hideV');
