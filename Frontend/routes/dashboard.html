@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WorkDesk - Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <div class="mcontainer" id="mnavbar">
+        <nav class="navbar navbar-expand-sm fixed-top" style="background-color: white">
+            <div class="container-fluid">
+                <img id="homelogo" class="logo" src="../resourses/logo.png" alt="" />
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+
+                        <a class="nav-link active" aria-current="page" href="../index.html"><i
+                                class="uil navicons uil-estate"></i>Home</a>
+                        <a class="nav-link active" aria-current="page" href="http://workdesk-videocall.netlify.app/"><i
+                                class="uil navicons uil-video"></i>Video Call</a>
+                        <a class="nav-link active" aria-current="page" href="https://workdesk-screensharing.netlify.app/"><i
+                                class="uil navicons uil-airplay"></i>Share Screen</a>
+                        <a class="nav-link active" aria-current="page" href="https://workdeskchat.netlify.app/"><i
+                                class="uil navicons uil-chat"></i>Messages</a>
+
+                    </div>
+                </div>
+                <div style="margin-right: 50px;" class="helluser">
+
+                    <h6><i class="uil navicons uil-user"></i> <span id="hellouser">Hey user</span></h6>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- main content -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slideContent">
+                    <div class="animateddiv">
+                        <div class="card" style="width: 110%;">
+                            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_vDd5lrv57P.json"
+                                background="transparent" speed="1" loop autoplay></lottie-player>
+                            <div class="timediv card-body">
+                                <span id='ct'></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cards">
+                        <div class="app-icons">
+                            <div>
+
+                                <lottie-player style="width: 100%;"
+                                    src="https://assets10.lottiefiles.com/packages/lf20_5bwhucnr.json"
+                                    background="transparent" speed="1" loop autoplay></lottie-player>
+                                <a class="nav-link active" aria-current="page" target="_blank" href="https://workdesk-screensharing.netlify.app/"></i>Share Screen</a>
+                            </div>
+
+                        </div>
+                        
+                        <div class="app-icons">
+                            <div>
+                                <lottie-player style="width: 100%;"
+                                    src="https://assets10.lottiefiles.com/packages/lf20_ihspk1vg.json"
+                                    background="transparent" speed="1" loop autoplay></lottie-player>
+                                <a class="nav-link active" aria-current="page" target="_blank" href="http://workdesk-videocall.netlify.app/"></i>Video Call</a>
+                            </div>
+
+                        </div>
+                       
+                        <div class="app-icons">
+                            <div>
+
+                                <lottie-player style="width: 100%;"
+                                    src="https://assets3.lottiefiles.com/packages/lf20_p5yomfw6.json"
+                                    background="transparent" speed="1" loop autoplay></lottie-player>
+                                <a class="nav-link active" aria-current="page" target="_blank" href="https://workdeskchat.netlify.app/"></i>Messages</a>
+                            </div>
+
+                        </div>
+                        <div class="app-icons">
+                            <div>
+
+                                <lottie-player style="width: 100%;"
+                                    src="https://assets7.lottiefiles.com/packages/lf20_RGVbkI.json"
+                                    background="transparent" speed="1" loop autoplay></lottie-player>
+                                <a class="nav-link active" aria-current="page" href="#">Connect</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <div class="pop-handler"></div>
+</body>
+
+</html>
+
+
+<script type="module" src="../scripts/dashboard.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>

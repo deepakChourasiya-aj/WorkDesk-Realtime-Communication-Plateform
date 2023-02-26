@@ -1,390 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WorkDesk - Homepage</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/style.css" />
-    <style></style>
-  </head>
 
-  <body>
-    <div class="mcontainer" id="mnavbar">
-      <nav
-        class="navbar navbar-expand-sm fixed-top"
-        style="background-color: white"
-      >
-        <div class="container-fluid">
-          <img class="logo" src="./resourses/workdesk-logo.png" alt="" />
-          <a class="navbar-brand" href="#">WorkDesk</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WorkDesk - Homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="./routes/loginSignup/login.html"
-                >Login</a
-              >
-              <a class="nav-link" href="./routes/loginSignup/signup.html"
-                >Signup</a
-              >
-            </div>
+  <style></style>
+</head>
+
+<body>
+  <div class="mcontainer" id="mnavbar">
+    <nav class="navbar navbar-expand-sm fixed-top" style="background-color: white">
+      <div class="container-fluid">
+        <img id="homelogo" class="logo" src="./resourses/logo.png" alt="" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="./routes/dashboard.html">DashBoard</a>
+            <a class="nav-link" href="./routes/loginSignup/login.html">Login</a>
+            <a class="nav-link" href="./routes/loginSignup/signup.html">Signup</a>
           </div>
         </div>
-      </nav>
-    </div>
-
-    <!-- main content -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="slideContent">
-            <div class="textcontent">
-              <h1 class="heading">WorkDesk</h1>
-              <h4 class="h3tag">
-                Access any device at any time. <br />
-                From anywhere. <br />
-                Always secure and fast.
-              </h4>
-              <p class="description">
-                WorkDesk Meetings is a proprietary videotelephony software
-                program developed by WorkDesk Video Communications. The free
-                plan allows up to 100 concurrent participants, with a 40-minute
-                time restriction. Users have the option to upgrade by
-                subscribing to a paid plan
-              </p>
-
-              <a href="./routes/loginSignup/signup.html">
-                <div class="d-grid gap-2">
-                  <button class="btn btn-outline-danger" type="button">
-                    Create an Account
-                  </button>
-                </div>
-              </a>
-            </div>
-            <div class="animateddiv">
-              <img src="./resourses/homepage.PNG" alt="" />
-            </div>
-          </div>
+        <div class="helluser">
+          <h6 id="hellouser">Hey user</h6>
         </div>
+      </div>
+    </nav>
+  </div>
 
-        <div class="swiper-slide">
-          <div class="slideContent">
-            <div class="animateddiv">
-              <lottie-player
-                src="https://assets9.lottiefiles.com/packages/lf20_4kji20Y93r.json"
-                background="transparent"
-                speed="1"
-                loop
-                autoplay
-              ></lottie-player>
-            </div>
-            <div class="textcontent">
-              <h1 class="heading">Access.Now.</h1>
-              <h4 class="h3tag">
-                Access any device at any time. <br />
-                From anywhere. <br />
-                Always secure and fast.
-              </h4>
-              <p class="description">
-                Bring teams together, reimagine workspaces, engage new
-                audiences, and delight your customers — all on the WorkDesk
-                platform you know and love.
-              </p>
+  <!-- main content -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slideContent">
+          <div class="textcontent">
+            <h1 class="heading">WorkDesk</h1>
+            <h4 class="h3tag">
+              Access any device at any time. <br />
+              From anywhere. <br />
+              Always secure and fast.
+            </h4>
+            <p class="description">
+              WorkDesk Meetings is a proprietary videotelephony software
+              program developed by WorkDesk Video Communications. The free
+              plan allows up to 100 concurrent participants, with a 40-minute
+              time restriction. Users have the option to upgrade by
+              subscribing to a paid plan
+            </p>
 
-              <a href="./routes/loginSignup/signup.html">
-                <div class="d-grid gap-2">
-                  <button class="btn btn-outline-danger" type="button">
-                    Create an Account
-                  </button>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="slideContent">
-            <div class="textcontent">
-              <h1 style="color: rgb(68, 68, 68)" class="heading">
-                600+
-                <span class="greycolor" style="font-size: 1rem">Million</span>
-              </h1>
-              <p class="greycolor">Downloads</p>
-              <h1 style="color: rgb(49, 49, 49)" class="heading">
-                900+
-                <span class="greycolor" style="font-size: 1rem">Million</span>
-              </h1>
-              <p class="greycolor">Session per Month</p>
-              <h1 style="color: rgb(58, 58, 58)" class="heading">
-                60+
-                <span class="greycolor" style="font-size: 1rem">Million</span>
-              </h1>
-              <p class="greycolor">Bridged miles per month</p>
-
-              <a href="./routes/loginSignup/login.html">
-                <div class="d-grid gap-2">
-                  <button class="btn btn-outline-warning" type="button">
-                    Already Have Account ! Login
-                  </button>
-                </div>
-              </a>
-            </div>
-            <div class="animateddiv">
-              <lottie-player
-                src="https://assets9.lottiefiles.com/packages/lf20_E7hdQZP3or.json"
-                background="transparent"
-                speed="1"
-                loop
-                autoplay
-              ></lottie-player>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="slideContent">
-            <div class="animateddiv">
-              <img src="./resourses/cards.PNG" alt="" />
-            </div>
-            <div class="textcontent">
-              <h2 class="h3tag">
-                Powering organizations across industries and geographies
-              </h2>
-              <p class="description">
-                WorkDesk helps consolidate communications, connect people, and
-                collaborate better together in the boardroom, classroom,
-                operating room, and everywhere in between..
-              </p>
-
-              <a href="./routes/loginSignup/signup.html">
-                <div class="d-grid gap-2">
-                  <button class="btn btn-outline-success" type="button">
-                    Explore Industry Solutions
-                  </button>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="slideContent">
-            <div class="textcontent">
-              <h2 class="h3tag">
-                Powering organizations across industries and geographies
-              </h2>
-              <p class="description">
-                WorkDesk helps consolidate communications, connect people, and
-                collaborate better together in the boardroom, classroom,
-                operating room, and everywhere in between..
-              </p>
-
-              <a href="./routes/loginSignup/signup.html">
-                <div class="d-grid gap-2">
-                  <button class="btn btn-outline-success" type="button">
-                    Explore Industry Solutions
-                  </button>
-                </div>
-              </a>
-            </div>
-            <div style="width: 60%">
-              <div
-                id="carouselExampleInterval"
-                class="carousel slide"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="100">
-                    <img
-                      src="https://anydesk.com/_static/img/resources/scam-prevention-7fa9a2.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img
-                      src="https://file-paa.zoom.us/T6gKsjwoSfyV_kUj1tUIvg/MS4xLmdiOkECsrqxH4CsCyNrKoEaQejmRxRXwuzhgGJibPJL/e33d3db1-5003-4a7e-a4ef-4c36d34c1a76.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="https://file-paa.zoom.us/v-lImfb7QgaJAp1xlBXfiw/MS4xLuUs8u96TOXJhetKpxmwSs6sU3e55sFBwXI8Aippn24-/b5d1a5bd-30ff-407f-8af1-4b78734913ed.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="https://file-paa.zoom.us/sjDkqLRMRly6ZtVIzms06g/MS4xLptt2bAwsgwEMH538870ubUus04d8YCBcu-XNmf1_Ob7/831bb149-2a03-4e3d-9c17-32bf2eefbeca.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleInterval"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleInterval"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
+            <a href="./routes/loginSignup/signup.html">
+              <div class="d-grid gap-2">
+                <button class="btn btn-outline-danger" type="button">
+                  Create an Account
                 </button>
               </div>
-            </div>
+            </a>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="slideContent">
-            <div class="animateddiv">
-              <lottie-player
-                src="https://assets8.lottiefiles.com/packages/lf20_mKMcjgVTY6.json"
-                background="transparent"
-                speed="1"
-                loop
-                autoplay
-              ></lottie-player>
-            </div>
-            <div class="textcontent">
-              <h1 class="heading">Make work less work</h1>
-              <p class="description">
-                Securely connect and collaborate so you can work better
-                together. Simple to manage and delightful to use, Zoom powers
-                the modern workforce.
-              </p>
-              <h4 class="h3tag">Discover the Possibilities.</h4>
-
-              <a href="./routes/loginSignup/signup.html"> </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div style="width: 60%; margin: auto">
-            <img src="./resourses/f2.PNG" alt="" />
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div>
-            <div style="text-align: center; margin: 50px auto">
-              <h1>Join our community</h1>
-            </div>
-            <div class="social-icons">
-              <div>
-                <img src="./resourses/insta.svg" alt="" />
-              </div>
-              <div>
-                <img src="./resourses/youtube.svg" alt="" />
-              </div>
-              <div>
-                <img src="./resourses/twi.svg" alt="" />
-              </div>
-              <div>
-                <img src="./resourses/youtube.svg" alt="" />
-              </div>
-              <div>
-                <img src="./resourses/linkedin.svg" alt="" />
-              </div>
-              <div>
-                <img src="./resourses/redict.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <!-- footer links -->
-          <div class="footer">
-            <div class="footer1">
-                <div class="footer-sections logos">
-                    <div>
-                        <img src="./workflow.jpg"alt="">
-                    </div>
-                    <div>
-                        <i class="fa fa-github" style="font-size:36px;color: white;"></i>
-                    <i class="fa fa-linkedin" style="font-size:36px;color: white;"></i>
-                    </div>
-                  </div>
-              <div class="footer-sections">
-                <h6>PRODUCT</h6>
-                <p>Features</p>
-                <p>Pricing</p>
-                <p>Security</p>
-              </div>
-              <div class="footer-sections">
-                <h6>COVIEW</h6>
-                <p>Our Story</p>
-                <p>Jobs</p>
-              </div>
-              <div class="footer-sections">
-                <h6>SUPPORT</h6>
-                <p>Documentation</p>
-                <p>Status</p>
-              </div>
-              <div class="footer-sections">
-                <h6>LEGAL</h6>
-                <p>TOS</p>
-                <p>Privacy</p>
-                <p>Imprint</p>
-              </div>
-            </div>
-
-            <!-- <div class="footer1"> -->
-              <!-- <div class="footer-sections">
-                        <h6>PRODUCT</h6>
-                        <p>Features</p>
-                        <p>Pricing</p>
-                        <p>Security</p>
-                    </div> -->
-            <!-- </div> -->
-            <!-- <hr style="height:2px;border-width:0;text-align:center; width: 70%; margin-left:210px; color:gray;background-color:gray"> -->
+          <div class="animateddiv">
+            <img src="./resourses/homepage.PNG" alt="" />
           </div>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
+
+      <div class="swiper-slide">
+        <div class="slideContent">
+          <div class="animateddiv">
+            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_4kji20Y93r.json" background="transparent"
+              speed="1" loop autoplay></lottie-player>
+          </div>
+          <div class="textcontent">
+            <h1 class="heading">Access.Now.</h1>
+            <h4 class="h3tag">
+              Access any device at any time. <br />
+              From anywhere. <br />
+              Always secure and fast.
+            </h4>
+            <p class="description">
+              Bring teams together, reimagine workspaces, engage new
+              audiences, and delight your customers — all on the WorkDesk
+              platform you know and love.
+            </p>
+
+            <a href="./routes/loginSignup/signup.html">
+              <div class="d-grid gap-2">
+                <button class="btn btn-outline-danger" type="button">
+                  Create an Account
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slideContent">
+          <div class="textcontent">
+            <h1 style="color: rgb(68, 68, 68)" class="heading">
+              600+
+              <span class="greycolor" style="font-size: 1rem">Million</span>
+            </h1>
+            <p class="greycolor">Downloads</p>
+            <h1 style="color: rgb(49, 49, 49)" class="heading">
+              900+
+              <span class="greycolor" style="font-size: 1rem">Million</span>
+            </h1>
+            <p class="greycolor">Session per Month</p>
+            <h1 style="color: rgb(58, 58, 58)" class="heading">
+              60+
+              <span class="greycolor" style="font-size: 1rem">Million</span>
+            </h1>
+            <p class="greycolor">Bridged miles per month</p>
+
+            <a href="./routes/loginSignup/login.html">
+              <div class="d-grid gap-2">
+                <button class="btn btn-outline-warning" type="button">
+                  Already Have Account ! Login
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="animateddiv">
+            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_E7hdQZP3or.json" background="transparent"
+              speed="1" loop autoplay></lottie-player>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slideContent">
+          <div class="animateddiv">
+            <img src="./resourses/cards.PNG" alt="" />
+          </div>
+          <div class="textcontent">
+            <h2 class="h3tag">
+              Powering organizations across industries and geographies
+            </h2>
+            <p class="description">
+              WorkDesk helps consolidate communications, connect people, and
+              collaborate better together in the boardroom, classroom,
+              operating room, and everywhere in between..
+            </p>
+
+            <a href="./routes/loginSignup/signup.html">
+              <div class="d-grid gap-2">
+                <button class="btn btn-outline-success" type="button">
+                  Explore Industry Solutions
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slideContent">
+          <div class="textcontent">
+            <h2 class="h3tag">
+              Powering organizations across industries and geographies
+            </h2>
+            <p class="description">
+              WorkDesk helps consolidate communications, connect people, and
+              collaborate better together in the boardroom, classroom,
+              operating room, and everywhere in between..
+            </p>
+
+            <a href="./routes/loginSignup/signup.html">
+              <div class="d-grid gap-2">
+                <button class="btn btn-outline-success" type="button">
+                  Explore Industry Solutions
+                </button>
+              </div>
+            </a>
+          </div>
+          <div style="width: 60%">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="100">
+                  <img src="https://anydesk.com/_static/img/resources/scam-prevention-7fa9a2.jpg" class="d-block w-100"
+                    alt="..." />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="https://file-paa.zoom.us/T6gKsjwoSfyV_kUj1tUIvg/MS4xLmdiOkECsrqxH4CsCyNrKoEaQejmRxRXwuzhgGJibPJL/e33d3db1-5003-4a7e-a4ef-4c36d34c1a76.jpg"
+                    class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://file-paa.zoom.us/v-lImfb7QgaJAp1xlBXfiw/MS4xLuUs8u96TOXJhetKpxmwSs6sU3e55sFBwXI8Aippn24-/b5d1a5bd-30ff-407f-8af1-4b78734913ed.jpg"
+                    class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://file-paa.zoom.us/sjDkqLRMRly6ZtVIzms06g/MS4xLptt2bAwsgwEMH538870ubUus04d8YCBcu-XNmf1_Ob7/831bb149-2a03-4e3d-9c17-32bf2eefbeca.jpg"
+                    class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slideContent">
+          <div class="animateddiv">
+            <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_mKMcjgVTY6.json" background="transparent"
+              speed="1" loop autoplay></lottie-player>
+          </div>
+          <div class="textcontent">
+            <h1 class="heading">Make work less work</h1>
+            <p class="description">
+              Securely connect and collaborate so you can work better
+              together. Simple to manage and delightful to use, Zoom powers
+              the modern workforce.
+            </p>
+            <h4 class="h3tag">Discover the Possibilities.</h4>
+
+            <a href="./routes/loginSignup/signup.html"> </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div style="width: 60%; margin: auto">
+          <img src="./resourses/f2.PNG" alt="" />
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div>
+          <div style="text-align: center; margin: 50px auto">
+            <h1>Join our community</h1>
+          </div>
+          <div class="social-icons">
+            <div>
+              <img src="./resourses/insta.svg" alt="" />
+            </div>
+            <div>
+              <img src="./resourses/youtube.svg" alt="" />
+            </div>
+            <div>
+              <img src="./resourses/twi.svg" alt="" />
+            </div>
+            <div>
+              <img src="./resourses/youtube.svg" alt="" />
+            </div>
+            <div>
+              <img src="./resourses/linkedin.svg" alt="" />
+            </div>
+            <div>
+              <img src="./resourses/redict.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <!-- footer links -->
+        <div class="footer">
+          <div class="footer1">
+            <div class="footer-sections logos">
+              <div>
+                <img style="width: 250px;height: 250px; background-color: white;" src="./resourses/name+logo.png"
+                  alt="">
+              </div>
+              <div>
+                <i class="fa fa-github" style="font-size:36px;color: white;"></i>
+                <i class="fa fa-linkedin" style="font-size:36px;color: white;"></i>
+              </div>
+            </div>
+            <div class="footer-sections">
+              <h6>PRODUCT</h6>
+              <p>Features</p>
+              <p>Pricing</p>
+              <p>Security</p>
+            </div>
+            <div class="footer-sections">
+              <h6>COVIEW</h6>
+              <p>Our Story</p>
+              <p>Jobs</p>
+            </div>
+            <div class="footer-sections">
+              <h6>SUPPORT</h6>
+              <p>Documentation</p>
+              <p>Status</p>
+            </div>
+            <div class="footer-sections">
+              <h6>LEGAL</h6>
+              <p>TOS</p>
+              <p>Privacy</p>
+              <p>Imprint</p>
+            </div>
+            <div class="footer-sections">
+              <h6>Cities</h6>
+              <p> Chiplun</p>
+              <p> Chitradurga</p>
+              <p> Chittoor</p>
+              <p> Chittorgarh</p>
+              <p> Churu</p>
+              <p> Cuddalore</p>
+              <p> Cuddalore</p>
+
+            </div>
+            <div class="footer-sections">
+              <h6>Cities</h6>
+              <p> Coimbatore</p>
+              <p> Cooch-Behar</p>
+              <p> Cuttack</p>
+              <p> Dahanu</p>
+              <p> Dahod</p>
+              <p> Daltonganj</p>
+            </div>
+            <div class="footer-sections">
+              <h6>Cities</h6>
+
+              <p> Vijayawada</p>
+              <p> Viluppuram</p>
+              <p> Virudhunagar</p>
+              <p> Vizag</p>
+              <p> Vizianagaram</p>
+              <p> Vyara</p>
+
+            </div>
+            <div class="footer-sections">
+              <h6>Cities</h6>
+              <p> Waidhan</p>
+              <p> Warangal</p>
+              <p> Wardha</p>
+              <p> Washim</p>
+              <p> Jhalawar</p>
+              <p> Jhansi</p>
+            </div>
+            <div class="footer-sections">
+              <h6>Cities</h6>
+              <p> Jodhpur</p>
+              <p> Jorhat</p>
+              <p> Junagadh</p>
+              <p> Nathdwara</p>
+              <p> Udaipur</p>
+              <p> Kadayanallur</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  </body>
+    <div class="swiper-pagination"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <div class="pop-handler"></div>
+</body>
+
 </html>
-<script src="./scripts/index.js"></script>
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-  crossorigin="anonymous"
-></script>
+<script type="module" src="./scripts/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+
 
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 

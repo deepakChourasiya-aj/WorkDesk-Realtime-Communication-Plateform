@@ -1,3 +1,7 @@
+:root{
+  --second-color-alt : rgba(0, 17, 255, 0.192);
+}
+
 html,
 body {
   position: relative;
@@ -47,7 +51,7 @@ body {
 
 .mcontainer {
   width: 100%;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   border: 1px solid red;
 
 }
@@ -112,19 +116,11 @@ a{
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 100%;
   justify-content:space-around;
   background-color: #29355b;
 }
-.footer1{
-/* border: 2px solid purple; */
-height: 35%;
-width: 80%;
-margin: auto;
-display: grid;
-grid-template-columns: repeat(5,1fr);
-gap: 40px;
-}
+.footer1{/* border: 2px solid purple; *//* height: 35%; */width: 80%;margin: auto;display: grid;grid-template-columns: repeat(5,1fr);gap: 40px;}
 .footer-sections{
   /* border: 2px solid blue; */
   width: 13%;
@@ -155,13 +151,65 @@ gap: 40px;
   /* align-items: center;
   text-align: center; */
   /* margin-left: rem; */
-  width: 80px;
-  border-radius: 50%;
-  height: 80px;
+  width: 100%;
   
 }
 .footer-sections>p{
   color: #ffffff80;
   text-align: left;
   cursor: pointer;
+}
+
+/* mayankraj */
+
+
+#homelogo{
+  cursor: pointer;
+}
+.navicons{
+  margin: 10px ;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+.navicons:hover ,a:hover {
+  background-color:var(--second-color-alt);
+  border-radius: 10px;
+  
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px ;
+
+}
+.app-icons{
+  border-radius: 10px;
+  border: 1px solid rgba(0, 17, 255, 0.192); 
+  display: flex;
+  width: 250px;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+
+}
+.app-icons:hover{
+  background-color: var(--second-color-alt);
+}
+
+.navicons-cards{
+  font-size: 2.5rem;
+  color: rgb(0, 104, 173);
+}
+
+.navicons-cards hover{
+  color: var(--second-color-alt);
+}
+#ct{
+  font-size: 1.3rem;
+  color: #29355b;
+}
+.timediv{
+  background-color: var(--second-color-alt);
 }
