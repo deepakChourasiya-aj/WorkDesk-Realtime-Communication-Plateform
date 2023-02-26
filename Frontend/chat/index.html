@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.io Live chat app</title>
+    <link rel="icon" type="image/x-icon" href="./img/chat-logo.png">
+
+    <!-- Bootstrap CDN css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="chat.css">
+
+    <!-- Socket.io client JS -->
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+        integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="body   overflow-hidden ">
+
+        <!-- Header -->
+        <div class="header  p-2 d-flex align-items-center">
+            <img src="./img/logo.png" alt="Socket.io Logo">
+            <span class="h4 text-white ms-1">Live Conversation App</span>
+        </div>
+
+        <!-- User login form -->
+        <!-- <div class="login-container p-5">
+            <form method="post" class="user-login d-flex justify-content-center flex-column">
+                <input type="text" class="form-control mb-3" placeholder="Username" autocomplete="off" name="username"
+                    id="username" required />
+                <button type="submit"
+                    class="btn btn-success d-inline-flex align-items-center justify-content-center"><span
+                        class="me-1">JOIN</span><img src="./icons/login.png" alt="join-chat" width="20px"></button>
+            </form>
+        </div> -->
+
+        <div class="chat-body">
+
+            <!-- Sidebar -->
+            <div class="showname">
+
+                <!-- User title -->
+                <div class="sidebar border-end">
+                    <div class="title name">
+                        <span id="user-title"></span>
+                    </div>
+                    <div class="user-title ">
+                        <span id="users-tagline"></span>
+                    </div>
+                    <div class="users">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Main -->
+            <div class="main">
+                <div class="chat-container">
+
+                    <!-- Active user title -->
+                    <div class="title option p-2  bg-opacity-50">
+                        <div>
+                            <!-- <a href=""><i class="fa-regular fa-comment"></i></a> -->
+                            <a href=""><i class="fa-solid fa-camera"></i></a>
+                            <a href=""><i class="fa-solid fa-video"></i></a>
+                        </div>
+                        <span id="active-user">&nbsp;</span>
+                    </div>
+
+                    <!-- Message area -->
+                    <div class="messages p-2"></div>
+
+                    <!-- Message form -->
+                    <div
+                        class="msg-form d-flex justify-content-center border-top align-items-center p-2 bg-secondary bg-opacity-50 d-none">
+                        <form method="post" class="msgForm w-100">
+                            <div class="d-flex">
+                                <input type="text" class="form-control" name="message" id="message"
+                                    placeholder="Please type your message here..." autocomplete="off" required />
+                                <button type="submit" class="btn btn-link"><img src="./img/send-btn.jpg"
+                                        alt="send"></button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
