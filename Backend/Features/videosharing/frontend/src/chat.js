@@ -14,74 +14,76 @@ video.muted = true;
 const userConnected = {}
 
 
-//  navigator.mediaDevices.getUserMedia({
+ navigator.mediaDevices.getUserMedia({
     
-//     video: true,
-//     audio: true,
+    video: true,
+    audio: true,
 
-// }).then(stream => {
-//     addStream(video, stream)
-//     //When Someone call us
-//     myPeer.on('call', (call) => {
+}).then(stream => {
+    addStream(video, stream)
+    UserSas=stream;
 
-//         //--For receiving Calls--
+    //When Someone call us
+    myPeer.on('call', (call) => {
 
-//         //answered call and send our current stream
-//         call.answer(stream)
+        //--For receiving Calls--
+
+        //answered call and send our current stream
+        call.answer(stream)
         
-//         //responding to coming videoStream
-//         const video = document.createElement('video');
+        //responding to coming videoStream
+        const video = document.createElement('video');
         
-//         call.on('stream' , (userStream) => {
-//             addStream(video,userStream)
-//         })
-//     })
-
-//     socket.on('user-join', (userID) => {
-//         connectNewUser(userID,stream)
-//     })
-
-// }).catch(err => {
-//     console.log(err);
-// })
-
-
-
-init()
-async function init(){
-
-    navigator.mediaDevices.getUserMedia({
-    
-        video: true,
-        audio: true,
-    
-    }).then(stream => {
-        addStream(video, stream)
-        UserSas=stream;
-        //When Someone call us
-        myPeer.on('call', (call) => {
-    
-            //--For receiving Calls--
-    
-            //answered call and send our current stream
-            call.answer(stream)
-            
-            //responding to coming videoStream
-            const video = document.createElement('video');
-            
-            call.on('stream' , (userStream) => {
-                addStream(video,userStream)
-            })
+        call.on('stream' , (userStream) => {
+            addStream(video,userStream)
         })
-    
-        socket.on('user-join', (userID) => {
-            connectNewUser(userID,stream)
-        })
-    
-    }).catch(err => {
-        console.log(err);
     })
-}
+
+    socket.on('user-join', (userID) => {
+        connectNewUser(userID,stream)
+    })
+
+}).catch(err => {
+    console.log(err);
+})
+
+
+
+// init()
+// async function init(){
+
+//     navigator.mediaDevices.getUserMedia({
+    
+//         video: true,
+//         audio: true,
+    
+//     }).then(stream => {
+//         addStream(video, stream)
+//         UserSas=stream;
+//         //When Someone call us
+//         myPeer.on('call', (call) => {
+    
+//             //--For receiving Calls--
+    
+//             //answered call and send our current stream
+//             call.answer(stream)
+            
+//             //responding to coming videoStream
+//             const video = document.createElement('video');
+            
+//             call.on('stream' , (userStream) => {
+//                 addStream(video,userStream)
+//             })
+//         })
+    
+//         socket.on('user-join', (userID) => {
+//             connectNewUser(userID,stream)
+//         })
+    
+//     }).catch(err => {
+//         console.log(err);
+//     })
+// }
 
 
 hideV.addEventListener("click",()=>{

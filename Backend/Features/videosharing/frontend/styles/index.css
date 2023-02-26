@@ -1,14 +1,16 @@
 
 body{
-    background-color: #939292;
+    background-color: #b4b1b1;
     color: white;
     font-family: 'Poppins', sans-serif;
+    margin: 0px;
 }
 
 h1{
-    font-size: 45px;
+    font-size: 300%;
     text-align: center;
-    margin-top: 120px;
+    margin-top: 110px;
+    /* border: 1px solid; */
 }
 
 h2{
@@ -19,7 +21,15 @@ h2{
 #logo{
     width: 100%;
     margin-top: 0;
+    /* border-radius: 40%; */
+    /* border: 1px solid red; */
 }
+/* @media only screen and (max-width: 600px) {
+    #logo{
+        width: 200%;
+        margin: auto;
+    }
+  } */
 
 #logoDiv{
     width: 12%;
@@ -43,7 +53,7 @@ input{
     margin-right: 10px;
     border-radius: 5px;
     border: none;
-    
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 button{
@@ -57,10 +67,11 @@ button{
     transition: .5s;
     border: none;
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 button:hover{
-    background-color: white;
-    color: #000000;
+    background-color: rgb(238, 47, 47);
+    color: #ffffff;
 }
 
