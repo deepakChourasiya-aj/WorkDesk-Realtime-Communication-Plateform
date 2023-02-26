@@ -1,3 +1,7 @@
+:root{
+  --second-color-alt : rgba(0, 17, 255, 0.192);
+}
+
 html,
 body {
   position: relative;
@@ -164,4 +168,58 @@ gap: 40px;
   color: #ffffff80;
   text-align: left;
   cursor: pointer;
+}
+
+/* mayankraj */
+
+
+#homelogo{
+  cursor: pointer;
+}
+.navicons{
+  margin: 10px ;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+.navicons:hover ,a:hover {
+  background-color:var(--second-color-alt);
+  border-radius: 10px;
+  
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px ;
+
+}
+.app-icons{
+  border-radius: 10px;
+  border: 1px solid rgba(0, 17, 255, 0.192); 
+  display: flex;
+  width: 250px;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+
+}
+.app-icons:hover{
+  background-color: var(--second-color-alt);
+}
+
+.navicons-cards{
+  font-size: 2.5rem;
+  color: rgb(0, 104, 173);
+}
+
+.navicons-cards hover{
+  color: var(--second-color-alt);
+}
+#ct{
+  font-size: 1.3rem;
+  color: #29355b;
+}
+.timediv{
+  background-color: var(--second-color-alt);
 }
