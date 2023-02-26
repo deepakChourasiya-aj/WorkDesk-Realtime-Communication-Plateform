@@ -5,9 +5,9 @@ Reatime screen sharing web application..
 
 ## Tech Stack
 
-**Client:** HTML,CSS, Javascript
+**Client:** HTML,CSS, Javascript,Bootsrap
 
-**Server:** Node, Express , MongoDB, WebRTC, PeerJS library, Socket.io
+**Server:** Node.js, Express.js , MongoDB, WebRTC, PeerJS library, Socket.io
 
 
 ## Frontend Part
