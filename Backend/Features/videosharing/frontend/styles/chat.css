@@ -46,11 +46,22 @@ video{
     background-color: white;
     border-radius: 100%;
     padding: 8px;
-    margin-top: 40px;
-}
-
-.icon{
+    margin-top: 45px;
+    margin-right: 10px;
     width: 50px;
     height: 50px;
     cursor: pointer;
 }
+.icon-color{
+    transition: .5s;
+}
+.icon-color:hover{
+    background-color: black !important;
+}
+
+/* .icon{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    
+} */

@@ -40,6 +40,7 @@ googlelogin.get(
     const picture = req.user._json.picture;
     const user_data = {
       name,
+      password: "user",
       email,
       picture,
     };

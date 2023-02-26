@@ -14,9 +14,9 @@ body {
 }
 
 .swiper {
-
   width: 100%;
   height: 100%;
+  /* border: 2px solid purple; */
 }
 
 .swiper-slide {
@@ -105,4 +105,63 @@ a{
   padding: 20px;
   border: 2px solid red;
   border-radius: 10px;
+}
+/* Footer */
+.footer{
+  /* border:  2px solid red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content:space-around;
+  background-color: #29355b;
+}
+.footer1{
+/* border: 2px solid purple; */
+height: 35%;
+width: 80%;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(5,1fr);
+gap: 40px;
+}
+.footer-sections{
+  /* border: 2px solid blue; */
+  width: 13%;
+  /* display: flex; */
+}
+.logos{
+  
+  justify-content: center;
+
+  text-align: center;
+  /* align-items: center; */
+  /* border: 2px solid blue;   */
+  width: 220px;
+}
+.logos>div{
+  display: flex;
+  /* border: 2px solid white; */
+  margin-top: 12px;
+  justify-content: space-around;
+}
+.footer-sections>h6{
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+  color: white;
+}
+.footer-sections img{
+  /* align-items: center;
+  text-align: center; */
+  /* margin-left: rem; */
+  width: 80px;
+  border-radius: 50%;
+  height: 80px;
+  
+}
+.footer-sections>p{
+  color: #ffffff80;
+  text-align: left;
+  cursor: pointer;
 }
