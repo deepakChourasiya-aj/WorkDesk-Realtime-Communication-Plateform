@@ -1,3 +1,8 @@
+const baseurl = "https://rich-ruby-kitten-toga.cyclic.app"
+import loading from "../components/loading.components.js";
+import hideLoading from "../components/hideLoading.components.js";
+
+
 const from = document.getElementById('login-form');
 from.addEventListener('submit',(e)=>{
     e.preventDefault();

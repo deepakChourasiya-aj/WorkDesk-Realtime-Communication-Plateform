@@ -38,7 +38,7 @@ passport.use(
     {
       clientID: GITHUB_CLIENT_ID,
       clientSecret: GITHUB_CLIENT_SECRET,
-      callbackURL: "http://localhost:8080/auth/github/callback",
+      callbackURL: "https://defiant-lime-kangaroo.cyclic.app/auth/github/callback",
     },
     async function (accessToken, refreshToken, profile, done) {
       // console.log(profile);
@@ -56,7 +56,7 @@ passport.use(
           const newUser = new UserModel({
             name,
             email,
-            password: "github-login",
+            password: process.env.authKey,
           });
           await newUser.save();
         }

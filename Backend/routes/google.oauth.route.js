@@ -1,60 +1,93 @@
+require("dotenv").config();
 const express = require('express');
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const googlelogin = express.Router();
 const passport = require("passport");
 const { UserModel } = require('../model/user.model');
+const session = require("express-session");
 
-require("dotenv").config();
-// console.log(process.env.GOOGLE_CLIENT_SECRET);
+// nesseccry middlwars
+
+googlelogin.use(
+  session({
+    secret: process.env.access_key,
+    resave: false,
+    saveUninitialized: true,
+    cookie: { maxAge: 60000 },
+  })
+);
+googlelogin.use(passport.initialize());
+googlelogin.use(passport.session());
+
+
+// check database status callbacks
+
+passport.serializeUser(function (user, cb) {
+  cb(null, user);
+});
+passport.deserializeUser(function (obj, cb) {
+  cb(null, obj);
+});
+
+
+//oauth provider
+
 passport.use(
   new GoogleStrategy(
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: "http://localhost:8080/auth/google/callback",
-      scope: ["profile", "email"],
+      callbackURL: "https://defiant-lime-kangaroo.cyclic.app/auth/google/callback",
+      scope : ["profile", "email"]
     },
-    function (accessToken, refreshToken, profile, cb) {
-      return cb(null, profile);
+    async function (accessToken, refreshToken, profile, done) {
+      // console.log(profile);
+      const name = profile._json.name;
+      const email = profile._json.email;
+      // console.log(name, email);
+
+      //! mongoDB  - saving user information
+
+      try {
+        const user = await UserModel.find({ email });
+        // console.log(user);
+        // if email not present
+        if (user.length === 0) {
+          const newUser = new UserModel({
+            name,
+            email,
+            password: process.env.authKey,
+          });
+          await newUser.save();
+        }
+        // rediection function
+      } catch (error) {
+        console.log(error.message);
+      }
+      done(null, { name, email });
     }
   )
 );
 
+// login route
+
 googlelogin.get(
   "/auth/google",
-  passport.authenticate("google", { scope: ["profile"] })
+  passport.authenticate("google", { scope: ["profile","email"] })
 );
+
+// varify route
 
 googlelogin.get(
   "/auth/google/callback",
   passport.authenticate("google", {
-    failureRedirect: "/login",
-    session: false,
+    failureRedirect:
+      "..",
   }),
-  async function (req, res) {
+  function (req, res) {
     // Successful authentication, redirect home.
-    const name = req.user._json.name;
-    const email = req.user._json.email;
-    //! mongoDB  - saving user information
-    let user = {name,email}
-    try {
-      const user = await UserModel.find({ email });
-      // console.log(user);
-      // if email not present
-      if (user.length === 0) {
-       const newUser = new UserModel({
-          name,
-          email,
-          password: "google-login",
-        });
-        await newUser.save();
-      }
-      // rediection function
-    } catch (error) {
-      console.log(error.message);
-    }
-
-    res.status(200).json({ userData: user });
+    // console.log(req.user);
+    res.status(200).json({ GoogleUserData: req.user });
   }
 );
 
