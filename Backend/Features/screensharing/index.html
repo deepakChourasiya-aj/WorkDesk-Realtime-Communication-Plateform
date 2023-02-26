@@ -11,20 +11,19 @@
   </head>
   <body>
     <h2 class="titile">Welcome to Workdesk</h2>
-    
-    <div>
-      <img src="meltedgroup.png" width="30%"  alt="">
-    </div>
     <p id="notification" hidden></p>
     <!-- <p>Create and Join Meeting</p> -->
+
     <div class="modelContainer">
       <div class="entry-modal" id="entry-modal">
-        <i class="bi bi-people-fill"></i>       
+        <!-- <i class="bi bi-people-fill"></i>        -->
+        <img src="logo.png" id="logoid"  alt="">
          <div class="inputbox">
           <input type="text" id="room-input" class="room-input" placeholder="Enter Your Room ID" />
         </div>
         <div id="control">
           <button type="button" class="btn btn-success" onclick="createRoom()">Create Room</button>
+     
           <button type="button" class="btn btn-info" onclick="joinRoom()">Join Room</button>
         </div>
       </div>
@@ -38,8 +37,8 @@
 
       <video id="local-video"></video>
       <div class="meet-controls-bar">
-        <button type="button" class="btn btn-warning"  onclick="startScreenShare()">Start Share</button>
-        <button type="button" class="btn btn-warning"  onclick="stopScreenSharing()">Stop Share</button>
+        <button type="button" class="btn btn-warning"  onclick="startScreenShare()"><img src="startshare.svg" width="24px" alt=""></button>
+        <button type="button" class="btn btn-warning"  onClick="window.location.reload()"><img src="finalstopshare.svg" width="24px" alt=""></button>
       </div>
     </div>
   </body>
