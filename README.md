@@ -44,6 +44,12 @@ Reatime screen sharing web application..
 ### Stop share -->
 - Click on stop share option 
 
+### To use Video calling feature -->
+-  First Create room 
+-  User can join the call by using the room ID
+-  To end the call click on hang on button
+
+
 
 ## Examples
  #### Creating connection and accessing user media .
