@@ -76,7 +76,7 @@ Reatime screen sharing web application..
     })
 ```
 
-# backend api endpoints
+# Backend api endpoints
 create user -> post: localhost:8080/user/register  
     sample data : 
     
