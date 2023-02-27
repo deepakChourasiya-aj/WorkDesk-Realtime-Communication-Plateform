@@ -49,6 +49,12 @@ Reatime screen sharing web application..
 -  User can join the call by using the room ID
 -  To end the call click on hang on button
 
+### To use chat feature -->
+-  Enter the user name 
+-  User can chat with online users
+-  For online users  it will show green tick
+
+
 
 
 ## Examples
