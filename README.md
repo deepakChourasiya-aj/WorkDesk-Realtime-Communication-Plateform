@@ -35,7 +35,7 @@ Reatime screen sharing web application..
 
 
 
-### To use screen share feature -->
+### To use {Screen share} feature -->
 -  First Create room 
 -  User can share the screen
 -  Than user can join the room using room ID
@@ -44,12 +44,12 @@ Reatime screen sharing web application..
 #### Stop share -->
 - Click on stop share option 
 
-### To use Video calling feature -->
+### To use {Video calling} feature -->
 -  First Create room 
 -  User can join the call by using the room ID
 -  To end the call click on hang on button
 
-### To use Chat feature -->
+### To use {Chat} feature -->
 -  Enter the user name 
 -  User can chat with online users
 -  For online users  it will show green tick
