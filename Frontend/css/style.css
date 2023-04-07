@@ -6,6 +6,7 @@ html,
 body {
   position: relative;
   height: 100%;
+  background-color: white;
 }
 
 body {
@@ -69,6 +70,7 @@ body {
 .slideContent{
   width: 80%;
   display: flex;
+  margin: 0 0 50px 0;
   justify-content: space-evenly;
 }
 .animateddiv{
@@ -126,6 +128,9 @@ a{
   width: 13%;
   /* display: flex; */
 }
+.f2_img{
+    width: 60%;
+  }
 .logos{
   
   justify-content: center;
@@ -212,4 +217,28 @@ a{
 }
 .timediv{
   background-color: var(--second-color-alt);
+}
+
+@media (min-width : 300px) and (max-width:700px){
+
+  .slideContent{
+    flex-direction: column;
+  }
+
+  .textcontent{
+    width: 80%;
+    text-align: center;
+  }
+  .animateddiv{
+    width: 80%;
+    margin: auto;
+  }
+  .swiper-slide{
+    margin-bottom: 150px;
+    margin-top: 50px;
+  }
+  .f2_img{
+    width: 80%;
+  }
+
 }
