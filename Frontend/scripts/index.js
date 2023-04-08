@@ -20,18 +20,18 @@ const userdata = JSON.parse(localStorage.getItem('userdata'))
 console.log(userdata);
 
 // auto laoding animations
-setTimeout(()=>{
+setTimeout(async()=>{
   if(userdata) {
   
     let hello = document.getElementById('hellouser')
     hello.innerText = "Hey "+userdata.name;
-    loading()
+    // loading()
   }else{
-    hideLoading()
-    window.location.href = "./routes/loginSignup/login.html"
+    // hideLoading()
+    // window.location.href = "./routes/loginSignup/login.html"
     loading()
   }
-},8000)
+},4000)
 
 // autologin redirect
 setTimeout(()=>{
@@ -39,26 +39,56 @@ setTimeout(()=>{
   
     let hello = document.getElementById('hellouser')
     hello.innerText = "Hey "+userdata.name;
-    hideLoading()
+    // hideLoading()
   }else{
-    loading()
+    // loading()
+    hideLoading()
     window.location.href = "./routes/loginSignup/login.html"
-    loading()
+    // loading()
   }
-},10000)
+},6000)
 
 let logout=document.getElementById("logout");
 if(userdata) {
   logout.innerText="Logout"
-  logout.addEventListener("click",()=>{
-    window.location.href="./routes/loginSignup/login.html"
-    localStorage.removeItem("userdata");
+  logout.addEventListener("click",async()=>{
+
+    
+    await Swal.fire({
+      position: 'center',
+      title: 'Are you sure?',
+      icon: 'question',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, Logout!'
+    }).then(async(result) => {
+      if (result.isConfirmed) {
+        await Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'Successfully LogedOut',
+          showConfirmButton: false,
+          timer: 1500
+        })
+        localStorage.removeItem("userdata");
+        window.location.href="./routes/loginSignup/login.html"
+      }
+    })
+   
   })
 
   
   let hello = document.getElementById('hellouser')
   hello.innerText = "Hey "+userdata.name;
+}else{
+
+  logout.addEventListener("click",()=>{
+    window.location.href="./routes/loginSignup/login.html"
+  })
 }
+
+
 // logo redirection
 const homelogo = document.getElementById('homelogo')
 homelogo.addEventListener('click',()=>{
