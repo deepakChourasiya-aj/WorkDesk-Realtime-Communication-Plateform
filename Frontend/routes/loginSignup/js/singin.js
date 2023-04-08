@@ -2,7 +2,6 @@ const baseurl = "https://defiant-lime-kangaroo.cyclic.app/"
 import loading from "../components/loading.components.js";
 import hideLoading from "../components/hideLoading.components.js";
 
-
 // const googlelogin = document.getElementById('googlelogin')
 
 // googlelogin.addEventListener('click',async(e) =>{
@@ -74,7 +73,8 @@ const login = async(user) =>{
             let data = await res.json()
             console.log(data);
             localStorage.setItem('userdata',JSON.stringify(data))
-            window.location.href = "../../../index.html"  
+            window.location.href = "../../index.html"  
+ 
         }else{
             let data = await res.json()
             alert(data.message);
