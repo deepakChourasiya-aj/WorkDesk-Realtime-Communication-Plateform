@@ -108,6 +108,28 @@ github Oauth
     4. protected
     5. logout 
 
+### Installation
+To install the WorkDesk, follow these steps:
+
+1. Clone the repository:
+```
+https://github.com/deepakChourasiya-aj/melted-group-7444.git
+```
+
+2. Install the dependencies:
+```
+cd melted-group
+npm install
+```
+
+Start the server:
+```
+npm run server
+```
+
+You are good to go
+
+
 
 System_design
 
