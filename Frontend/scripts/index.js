@@ -47,7 +47,14 @@ setTimeout(()=>{
   }
 },10000)
 
+let logout=document.getElementById("logout");
 if(userdata) {
+  logout.innerText="Logout"
+  logout.addEventListener("click",()=>{
+    window.location.href="./routes/loginSignup/login.html"
+    localStorage.removeItem("userdata");
+  })
+
   
   let hello = document.getElementById('hellouser')
   hello.innerText = "Hey "+userdata.name;
