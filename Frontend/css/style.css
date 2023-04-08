@@ -129,6 +129,11 @@ a {
   /* width: 13%; */
   /* display: flex; */
 }
+.f2_img_div{
+  width: 80%;
+}
+
+
 .f2_img {
   width: 50%;
 }
@@ -181,6 +186,7 @@ a:hover {
 }
 
 .cards {
+  width: 40%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -189,8 +195,6 @@ a:hover {
   border-radius: 10px;
   border: 1px solid rgba(0, 17, 255, 0.192);
   display: flex;
-  width: 250px;
-  height: 300px;
   align-items: center;
   justify-content: center;
   transition: 0.3s;
@@ -228,8 +232,15 @@ a:hover {
     width: 80%;
     margin: auto;
   }
+  #animateddivv{
+   display: none; 
+  }
+  .cards{
+    width: 80%;
+    margin: auto;
+  }
   .swiper-slide {
-    margin-bottom: 150px;
+    margin-bottom: 130px;
     margin-top: 50px;
   }
   .f2_img {
@@ -244,5 +255,24 @@ a:hover {
   }
   .f2_img {
     width: 30%;
+  }
+  .heading {
+    font-size: 3.5rem;
+  
+    text-align: center;
+  }
+  .app-icons{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 450px){
+  .cards{
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(1,1fr);
+  }
+  #animateddivv{
+    display: none;
   }
 }
