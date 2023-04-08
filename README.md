@@ -81,9 +81,9 @@ create user -> post: localhost:8080/user/register
     sample data : 
     
     {
-      "name": "chikkuuu",
-      "email": "chikkuuu@gmail.com",
-      "password": "mayank"
+      "name": "User",
+      "email": "User@gmail.com",
+      "password": "User"
     }
   ---    
 
@@ -130,6 +130,7 @@ npm run server
 You are good to go
 
 
+<br>
 
 System_design
 
