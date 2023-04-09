@@ -118,6 +118,7 @@ a {
   /* height: 100%; */
   justify-content: space-around;
   background-color: #29355b;
+  margin-bottom: -180px;
 }
 .footer1 {
   /* border: 2px solid purple; */ /* height: 35%; */

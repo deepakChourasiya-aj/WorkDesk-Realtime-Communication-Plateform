@@ -81,9 +81,9 @@ create user -> post: localhost:8080/user/register
     sample data : 
     
     {
-      "name": "chikkuuu",
-      "email": "chikkuuu@gmail.com",
-      "password": "mayank"
+      "name": "User",
+      "email": "User@gmail.com",
+      "password": "User"
     }
   ---    
 
@@ -108,6 +108,29 @@ github Oauth
     4. protected
     5. logout 
 
+### Installation
+To install the WorkDesk, follow these steps:
+
+1. Clone the repository:
+```
+https://github.com/deepakChourasiya-aj/melted-group-7444.git
+```
+
+2. Install the dependencies:
+```
+cd melted-group
+npm install
+```
+
+Start the server:
+```
+npm run server
+```
+
+You are good to go
+
+
+<br>
 
 System_design
 
@@ -118,5 +141,6 @@ System_design
 
 ![Screenshot (518)](https://user-images.githubusercontent.com/87657007/221489038-db7b7ccd-86b1-441f-9ed9-aef1b489ea1f.png)
 ![Screenshot (519)](https://user-images.githubusercontent.com/87657007/221489043-ed9eabae-9d14-4f4c-bff5-d4fb58404d49.png)
+![image](https://user-images.githubusercontent.com/109690823/230712966-a9333eae-c068-41f9-9ca1-f1346a75eb75.png)
 ![Screenshot (520)](https://user-images.githubusercontent.com/87657007/221489051-e6a06137-e7a4-42a7-9e5f-000eb14d6358.png)
 ![Screenshot (522)](https://user-images.githubusercontent.com/87657007/221489062-46235239-d888-4ca6-89fe-d5a8e4e05a48.png)

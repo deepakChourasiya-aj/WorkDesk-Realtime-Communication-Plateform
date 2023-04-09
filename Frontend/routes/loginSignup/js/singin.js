@@ -69,7 +69,13 @@ const login = async(user) =>{
 
 
         if(res.ok){
-            alert("Logged in")
+            await Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Logged in',
+                showConfirmButton: false,
+                timer: 1500
+              })
             let data = await res.json()
             console.log(data);
             localStorage.setItem('userdata',JSON.stringify(data))
@@ -77,14 +83,29 @@ const login = async(user) =>{
  
         }else{
             let data = await res.json()
-            alert(data.message);
+            await Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: `Invalide Credentials`,
+                showConfirmButton: false,
+                timer: 2500
+              })
             document.body.style.backgroundColor = 'white';
             hideLoading()
             window.location.reload();
         }
 
     } catch (error) {
-        alert(error.message);
+        // alert(error.message);
+        Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: `Invalide Credentials`,
+            showConfirmButton: false,
+            timer: 2000
+          })
+        hideLoading()
+
     }
 
 }

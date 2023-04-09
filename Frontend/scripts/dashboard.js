@@ -17,9 +17,10 @@ let swiper = new Swiper(".mySwiper", {
 
 
 const userdata = JSON.parse(localStorage.getItem('userdata'))
-console.log(userdata);
+// console.log(userdata);
 if (userdata) {
-
+    // let logout=document.getElementById("logout");
+    // logout.add
     let hello = document.getElementById('hellouser')
     hello.innerText = "Hey " + userdata.name;
     hideLoading()
