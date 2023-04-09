@@ -32,7 +32,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+.swiper-slide>div{
 
+  margin: auto;
+}
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -124,11 +127,11 @@ a {
   grid-template-columns: repeat(5, 1fr);
   gap: 40px;
 }
-.footer-sections {
+
   /* border: 2px solid blue; */
   /* width: 13%; */
   /* display: flex; */
-}
+
 .f2_img_div{
   width: 80%;
 }
@@ -263,6 +266,10 @@ a:hover {
   }
   .app-icons{
     flex-direction: column;
+  }
+  .social-icons{
+    grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
   }
 }
 
