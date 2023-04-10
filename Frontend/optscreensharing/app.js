@@ -79,7 +79,7 @@ function notify(msg) {
     }, 3000);
 }
 
-
+// join room function for the new peer
 function joinRoom() {
     console.log('User is Joining Room')
 
@@ -137,7 +137,7 @@ function startScreenShare(){
       
     })
 }
-
+// stop sharing function 
 function stopScreenSharing(){
     // not sharing than return 
     if(!screenSharing) return ;

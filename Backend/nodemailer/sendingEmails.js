@@ -2,7 +2,7 @@ const nodemailer = require("nodemailer");
 require("dotenv").config()
 
   
-
+// creating a mailing system for a new user  // still under progress 
 
 async function sendEmail(email,credentials,name) {
    //   console.log(email);

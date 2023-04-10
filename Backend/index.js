@@ -13,14 +13,14 @@ const passport = require("passport");
 const { googlelogin } = require("./routes/google.oauth.route");
 const app = express();
 const server = http.createServer(app);
-
+// All required packages for the app 
 // middleware
 
 app.use(cookieParser());
 app.use(express.json());
 app.use(cors());
 
-
+// base Route
 app.get("/", (req, res) => res.send("home_Route"));
 
 // Oauth

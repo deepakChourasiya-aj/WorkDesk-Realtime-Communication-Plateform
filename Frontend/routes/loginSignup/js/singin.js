@@ -41,6 +41,7 @@ import hideLoading from "../components/hideLoading.components.js";
 //     }
 // })
 
+// getting all details from user for the login page
 
 const from = document.getElementById('login-form');
 from.addEventListener('submit',(e)=>{
@@ -54,7 +55,7 @@ from.addEventListener('submit',(e)=>{
 
 
 
-
+// login function for verification of the user
 const login = async(user) =>{
     
     try {

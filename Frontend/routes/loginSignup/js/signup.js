@@ -3,7 +3,7 @@ const baseurl = "https://defiant-lime-kangaroo.cyclic.app/"
 import loading from "../components/loading.components.js";
 import hideLoading from "../components/hideLoading.components.js";
 
-
+// getting user data from the signup form
 const singupfrom = document.getElementById('register-form');
 singupfrom.addEventListener('submit',(e)=>{
     e.preventDefault();
@@ -16,7 +16,7 @@ singupfrom.addEventListener('submit',(e)=>{
 
     console.log(user);
 })
-
+// registering a new user 
 const register = async(user) =>{
     try {
 
