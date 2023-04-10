@@ -1,13 +1,13 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
-
+// new routhe for the generating new tokens
 const GntRouter = express.Router();
 
 GntRouter.get("/", (req, res) => {
   const refreshtoken = req.cookies.Refresh_Token || "";
   // console.log(refreshtoken);
-
+  
   if (!refreshtoken) res.status(401).send({ Message: "Please Login Again" });
 
   jwt.verify(refreshtoken, process.env.Refresh_Token_key, (err, decoded) => {

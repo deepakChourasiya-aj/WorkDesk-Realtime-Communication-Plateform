@@ -47,7 +47,7 @@ setTimeout(()=>{
     // loading()
   }
 },6000)
-
+// log-out function for the logout button clearing data of the user from local storage
 let logout=document.getElementById("logout");
 if(userdata) {
   logout.innerText="Logout"
