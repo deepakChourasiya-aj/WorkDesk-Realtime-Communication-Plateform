@@ -17,8 +17,6 @@ Reatime screen sharing web application..
 
 - Home page
 - Login/Signup
-- Google OAuth 
-- Github OAuth
 
 ## Backend Part
 - Authentication using JWT
